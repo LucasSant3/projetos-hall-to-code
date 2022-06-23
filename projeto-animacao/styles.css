@@ -1,0 +1,156 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Rubik Bubbles", sans-serif;
+  overflow: hidden;
+
+}
+
+@keyframes loading {
+  0% {
+    margin-bottom: 100px;
+  }
+
+  100% {
+    margin-top: 100px;
+  }
+}
+
+@keyframes cloud-animation {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(0, 245, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 206, 255, 1) 60%,
+    rgba(0, 245, 255, 1) 100%
+  );
+  width: 100vw;
+}
+
+.loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 160px;
+  color: white;
+  border-radius: 20px;
+  animation: loading 3s ease-in-out infinite alternate;
+  z-index: 2;
+}
+
+.cloud {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 500px;
+  height: 200px;
+  position: relative;
+  position: absolute;
+  border-radius: 50% 50% 20% 20%;
+  animation: cloud-animation 24s linear infinite;
+  z-index: 1;
+}
+
+.a {
+  top: -35px;
+  position: absolute;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.b {
+  position: absolute;
+  background-color: white;
+  height: 200px;
+  width: 250px;
+  border-radius: 50%;
+  bottom: 30%;
+  left: 128px;
+}
+
+.c {
+  top: -35px;
+  right: 0px;
+  position: absolute;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.d {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  bottom: -32px;
+  left: -36px;
+}
+
+.e {
+  position: absolute;
+  background-color: white;
+  height: 200px;
+  width: 250px;
+  border-radius: 50%;
+  top: 29%;
+  left: 108px;
+}
+
+.f {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  bottom: -35px;
+  right: -25px;
+}
+
+.nuvem-1 {
+  transform: scale(0.5);
+  position: absolute;
+  bottom: 175px;
+  animation: cloud-animation 15s linear infinite;
+}
+
+.nuvem-2 {
+  transform: scale(0.5);
+  position: absolute;
+  bottom: -17px;
+  animation: cloud-animation 27s linear infinite;
+}
+
+.nuvem-3 {
+  transform: scale(0.3);
+  position: absolute;
+  top: -45px;
+  animation: cloud-animation 20s linear infinite;
+}
+
+.nuvem-4 {
+  transform: scale(0.4);
+  position: absolute;
+  top: 90px;
+  animation: cloud-animation 37s linear infinite;
+}

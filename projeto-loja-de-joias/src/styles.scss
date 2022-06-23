@@ -1,0 +1,230 @@
+@import "./scss/_mixin.scss";
+@import "./scss/_reset.scss";
+@import "./scss/_variables.scss";
+
+.header__top {
+  @include flex();
+  background-color: $darkPurple;
+  height: 30px;
+  color: $white;
+  text-transform: uppercase;
+
+  &-wrapper {
+    @include flex();
+    max-width: 600px;
+
+    &-text {
+      @include flex(center, flex-end);
+      font-size: calculate-rem(12);
+      font-weight: 300;
+
+      &::after {
+        content: "";
+        width: 1px;
+        height: 12px;
+        background-color: $white;
+        display: inline-block;
+
+        margin: 0 10px 0 5px;
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    &-strong {
+      font-weight: 700;
+      margin: 0 5px;
+    }
+    &-margin {
+      margin-left: 5px;
+    }
+  }
+}
+
+.header__bottom {
+  background-color: $lightPurple;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header__container {
+  @include container-center();
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  max-width: 238px;
+  width: 100%;
+}
+
+.logo-text {
+  font-family: "Ovo", sans-serif;
+  font-size: calculate-rem(48);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $white;
+  text-decoration: none;
+}
+
+.header__menu {
+  font-size: calculate-rem(14);
+  display: flex;
+  margin: 0 31px;
+  width: 780px;
+  justify-content: space-between;
+  &-text {
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+.header__icons {
+  @include flex();
+
+  max-width: 135px;
+  width: 100%;
+
+  img {
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 30px;
+  }
+  :last-child {
+    margin-right: 0;
+  }
+}
+
+.header__menu-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > .header__menu-categories {
+    position: absolute;
+    display: none;
+    padding-top: 41px;
+  }
+
+  &:hover {
+    & > .header__menu-categories {
+      display: block;
+    }
+  }
+
+  & > .header__menu--jewel {
+    position: absolute;
+    display: none;
+  }
+
+  &:hover {
+    & > .header__menu--jewel {
+      display: block;
+    }
+  }
+}
+
+.header__menu-text-categories {
+  height: 40px;
+  background-color: $white;
+  color: $black;
+  min-width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:first-child {
+    border-top: 6px solid $darkPurple;
+  }
+  &:hover {
+    background-color: $lightGrey;
+    cursor: pointer;
+  }
+}
+
+.header__menu-text--hover {
+  text-decoration: none;
+  color: inherit;
+  font-size: calculate-rem(13);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.header__menu--jewel {
+  padding-top: 41px;
+}
+
+.header__menu--jewel--container {
+  background-color: $lightPurple;
+  border-top: 6px solid $darkPurple;
+}
+
+.header__menu-jewel--submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border-top: 6px solid $darkPurple;
+  background-color: $white;
+  min-width: 240px;
+}
+
+.header__menu--jewel--item {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+  position: relative;
+  &:hover {
+    background-color: $darkPurple;
+    & >.header__menu-jewel--submenu{
+      display: block;
+    }
+  }
+}
+
+.header__menu-jewel--submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border-top: 6px solid $darkPurple;
+  background-color: $white;
+  min-width: 240px;
+}
+
+.header_menu-jewel--submenu-item {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+  position: relative;
+  &:hover {
+    background-color: $grey;
+    & >.header__menu-jewel--submenu{
+      display: block;
+    }
+  }
+}
+
+.header__menu-jewel--text{
+  text-decoration: none;
+  color: $white;
+  font-size: calculate-rem(13);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.header_menu-jewel--submenu-text {
+text-decoration: none;
+color: $black;
+font-size: calculate-rem(13);
+font-weight: 400;
+text-transform: capitalize;
+}

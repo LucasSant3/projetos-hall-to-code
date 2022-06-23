@@ -1,0 +1,360 @@
+@import "./css/reset";
+@import "./css/variables";
+
+body {
+  background-color: $blue;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+  padding: 10px 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.right-column,
+.display__menu {
+  width: 387px;
+}
+
+.mid-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $lightBlue;
+  padding: 50px 54px;
+}
+
+.display__menu {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 35px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-text {
+    border: none;
+    border-radius: 10px;
+    background-color: $white;
+    width: 100%;
+
+    &.with-checkbox {
+      padding-right: 75px;
+    }
+  }
+
+  .toggle-styles {
+    display: flex;
+    position: relative;
+    height: 48px;
+    margin-top: 50px;
+  }
+
+  .toggle-styles-2 {
+    display: flex;
+    position: relative;
+    height: 48px;
+    margin-top: 20px;
+  }
+
+  .checkbox-position {
+    position: absolute;
+    right: 10px;
+    margin-top: 9px;
+  }
+
+  .checkbox-container {
+    .toggle-button {
+      display: none;
+    }
+
+    .toggle-button:checked + label {
+      justify-content: flex-end;
+    }
+
+    label {
+      width: 56px;
+      height: 32px;
+      border-radius: 100px;
+      background-color: $blue;
+      display: flex;
+      align-items: center;
+      padding: 0 4px;
+
+      &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $white;
+        display: block;
+      }
+    }
+
+    label.outline {
+      border: 1.5px solid $white;
+    }
+  }
+
+  .green-text {
+    color: $green;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .--match {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .match-type {
+    color: $white;
+    font-size: 16px;
+  }
+
+  .display__menu--match--type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px 0;
+  }
+
+  .play-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+
+    .button {
+      width: 317px;
+      height: 54px;
+      background-color: $green;
+      color: $white;
+      border: none;
+      border-radius: 10px;
+    }
+  }
+
+  .match-history {
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .match-history-text {
+      color: $white;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  .last-result {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .round-winner {
+    width: 168px;
+    height: 50px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 31px 3px 15px;
+    border-radius: 10px;
+  }
+
+  .winner {
+    color: $green;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .winner-spot {
+    color: $grey;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .cenarium {
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  .battle-field-scenery {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 25px;
+  }
+
+  .mini-battle-field {
+    width: 15px;
+    height: 15px;
+    background-color: $white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $grey;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .reset-button {
+    width: 317px;
+    height: 54px;
+    background-color: $white;
+    color: $blue;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    margin-top: 100px;
+  }
+}
+
+.score-board {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.board {
+  margin-top: 10px;
+  color: $blue;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.player-score {
+  display: flex;
+  align-items: center;
+  padding: 11px 30px 19px 30px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.score {
+  color: $blue;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.player {
+  color: $grey;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-battle-field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 70px;
+  gap: 15px;
+  width: 510px;
+}
+
+.battle-field {
+  width: 160px;
+  height: 160px;
+  color: $grey;
+  background-color: $white;
+  font-size: 130px;
+  font-weight: 700;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  padding: 66px 35px;
+}
+
+.second-title {
+  text-align: center;
+  color: $white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.play-history-margin {
+  margin-top: 28px;
+}
+
+.play-history {
+  background-color: $white;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.move {
+  font-size: 48px;
+  font-weight: 700;
+  color: $grey;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.move-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-description {
+  color: $grey;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.play-description {
+  color: $blue;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 6px;
+}

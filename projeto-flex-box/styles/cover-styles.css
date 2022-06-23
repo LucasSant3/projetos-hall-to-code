@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6fcf97;
+  font-family: 'Raleway', sans-serif;
+}
+
+.index-link {
+  font-size: 50px;
+  font-weight: 900;
+  width: 293px;
+  height: 116px;
+  text-align: center;
+}
+
+a {
+  color: #000000;
+  text-decoration: unset;
+}
+
+a:hover {
+  transition: 300ms;
+  text-decoration: underline;
+}

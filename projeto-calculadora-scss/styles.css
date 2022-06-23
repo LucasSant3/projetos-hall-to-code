@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+
+input {
+  padding: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-weight: 400;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.calculator {
+  width: 390px;
+  background-color: #292727;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.calculator__display {
+  width: 100%;
+}
+
+.calculator .margin {
+  margin-top: 45px;
+  padding: 0px 20px;
+}
+
+.calculator__display-input {
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  width: 100%;
+  text-align: right;
+}
+
+.calculator__display-result {
+  color: #969696;
+  font-size: 3rem;
+  height: 48px;
+  margin-top: 65px;
+  text-align: right;
+}
+
+.calculator__callback {
+  margin-top: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.calculator .line {
+  width: 100%;
+  border: 1px solid #4e4d4d;
+  margin: 20px 0px;
+}
+
+.calculator__buttons {
+  padding: 0px 20px;
+}
+
+.calculator__buttons--button {
+  background-color: #343434;
+  border-radius: 9px;
+  color: #FFFFFF;
+  width: 73px;
+  height: 75px;
+  border: 0;
+  font-size: 2.25rem;
+}
+
+.calculator__buttons--button:hover:not(:first-child):not(:last-child) {
+  background-color: #b0b0b0;
+}
+
+.calculator__buttons--button-background-red {
+  background-color: #FF5959;
+}
+
+.calculator__buttons--button-background-red:hover {
+  background-color: #ff8c8c;
+}
+
+.calculator__buttons--button-green-button {
+  color: #52DF68;
+}
+
+.calculator__buttons--button-background-green {
+  background-color: #52DF68;
+  color: #343434;
+}
+
+.calculator__buttons--button-background-green:hover {
+  background-color: #7de78e;
+}
+
+.calculator__buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 19px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.calculator__buttons-wrapper:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.header__info {
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  margin-right: 195px;
+}
+
+.keyboard-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.keyboard-bottom-content {
+  width: 135px;
+  height: 5px;
+  background-color: #FFFFFF;
+  border-radius: 100px;
+}
+/*# sourceMappingURL=styles.css.map */

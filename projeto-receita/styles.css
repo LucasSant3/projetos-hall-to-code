@@ -1,0 +1,144 @@
+* {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: #61656d;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #ff6a28;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 2px;
+}
+
+.container-center {
+  background-color: #f0f0f0;
+  width: 916px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 63px;
+}
+
+.img-main {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.info-box {
+  display: flex;
+  width: 118px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.box-wrapper {
+  background-color: #ffffff;
+  width: 798px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px 26px 10px 26px;
+  margin-bottom: 16px;
+}
+
+.container-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc-info {
+  margin-top: 5px;
+}
+
+.desc-info--orange {
+  text-transform: uppercase;
+  color: #ff6a28;
+  margin-top: 4px;
+}
+
+.info-box-big {
+  width: 238px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  padding: 12px 19px;
+}
+
+.info-box-big img {
+  margin-right: 11px;
+}
+
+.name-field {
+  color: #ff6a28;
+}
+
+.prep-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prep-title {
+  color: #ff6a28;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 8px;
+  display: flex;
+}
+
+.list {
+  margin-top: 17px;
+  margin-left: 27px;
+}
+
+.list-text {
+  color: #61656d;
+  margin-bottom: 10px;
+}
+
+.ing-box {
+  margin-top: 37px;
+}
+
+.pan-box {
+  margin-top: 16px;
+}
+
+.prep-step {
+  margin-top: 16px;
+}
+
+.prep-text {
+  margin-bottom: 20px;
+}
+
+.step-box {
+  margin-bottom: 30px;
+}
+
+.new-title {
+  background-color: #F0F0F0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font: bold;
+  color: #61656d;
+  width: 800px;
+  height: 34px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.add-info-text {
+  margin-bottom: 21px;
+}

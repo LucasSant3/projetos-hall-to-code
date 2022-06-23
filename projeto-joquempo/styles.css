@@ -1,0 +1,147 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #82cdff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.title {
+  width: 430px;
+  height: 74px;
+  color: #ffffff;
+  background-color: #0099ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 949px;
+  height: 148px;
+  background-color: #0099ff;
+  border-radius: 17px 17px 17px 17px;
+  justify-content: space-evenly;
+}
+
+.scoreboard-text {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.score {
+  width: 130px;
+  height: 120px;
+  background-color: #dbf1ff;
+  color: #0099ff;
+  font-size: 104px;
+  font-weight: 900;
+  border-radius: 17px;
+  display: flex;
+  justify-content: center;
+  line-height: 108px;
+}
+
+.vs-small {
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: 900;
+  margin: 0 20px;
+}
+
+.battleboard {
+  margin-top: 56px;
+  height: 414px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.button {
+  color: #dbf1ff;
+  background-color: #0099ff;
+  border: none;
+  border-radius: 8px;
+  width: 220px;
+  height: 80px;
+  font-size: 44px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 300ms;
+  box-shadow: 3px 3px 3px #000000;
+}
+
+.button:hover {
+  border: 1px solid #0099ff;
+  background-color: transparent;
+  color: #0099ff;
+  box-shadow: 1px 1px 1px #000000;
+}
+
+.battlefield {
+  width: 1313px;
+  height: 414px;
+  background-color: #0099ff;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin: 0 19px 0 19px;
+}
+
+.battle-action {
+  width: 464px;
+  height: 345px;
+  background-color: #DBF1FF;
+  border-radius: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vs-big{
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 104px;
+  margin: 0 60px;
+}
+
+.action-buttons {
+  display: flex;
+  margin-top: 22px;
+}
+
+.button-reset {
+  margin-left: 101px;
+}
+
+.image {
+  width: 70%;
+}
+
+.battle-action-2 {
+  transform: scalex(-1);
+}
+
+.start {
+  background-color: red;
+}

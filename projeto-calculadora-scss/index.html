@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Projeto-Calculadora</title>
+</head>
+
+<body>
+  <article class="container calculator">
+    <section>
+      <div class="header">
+        <small class="header__info">9:41</small>
+        <div class="header__info--images">
+          <img src="./assets/connection.png" alt="icone indicando a quantidade de sinal recebido pelo celular"
+            title="icone com 4 barras completas, cada barra indica a quantidade de sinal recebido">
+          <img src="./assets/wifi.png" alt="icone simbolizando a internet recebida pelo roteador de internet"
+            title="icone com 3 linhas curvas preenchidas, indicando o recebimento do sinal do roteador">
+          <img src="./assets/battery.png" alt="icone simbolizando a quantidade de bateria no celular"
+            title="barra com sinalização verde, indicando a porcentagem de bateria no celular">
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="margin">
+      <input type="text" class="calculator__display-input" value="">
+      <div class="calculator__display-result"></div>
+      <div class="calculator__callback">
+        <img src="./assets/callback.png" alt="icone de um circulo com uma seta dando a volta no circulo"
+          title="Resetar">
+      </div>
+      <div class="line"></div>
+    </section>
+    <div class="calculator__buttons">
+      <div class="calculator__buttons-wrapper">
+        <button class="calculator__buttons--button calculator__buttons--button-background-red calculator__buttons--operator clear">C</button>
+        <button class="calculator__buttons--button calculator__buttons--button-green-button calculator__buttons--operator">()</button>
+        <button class="calculator__buttons--button calculator__buttons--button-green-button calculator__buttons--operator">%</button>
+        <button class="calculator__buttons--button calculator__buttons--button-green-button calculator__buttons--operator">÷</button>
+        <button class="calculator__buttons--button calculator__buttons--number">7</button>
+        <button class="calculator__buttons--button calculator__buttons--number">8</button>
+        <button class="calculator__buttons--button calculator__buttons--number">9</button>
+        <button class="calculator__buttons--button calculator__buttons--button-green-button calculator__buttons--operator">x</button>
+        <button class="calculator__buttons--button calculator__buttons--number">4</button>
+        <button class="calculator__buttons--button calculator__buttons--number">5</button>
+        <button class="calculator__buttons--button calculator__buttons--number">6</button>
+        <button class="calculator__buttons--button calculator__buttons--button-green-button calculator__buttons--operator">-</button>
+        <button class="calculator__buttons--button calculator__buttons--number">1</button>
+        <button class="calculator__buttons--button calculator__buttons--number">2</button>
+        <button class="calculator__buttons--button calculator__buttons--number">3</button>
+        <button class="calculator__buttons--button calculator__buttons--button-green-button calculator__buttons--operator">+</button>
+        <button class="calculator__buttons--button calculator__buttons--operator">+/-</button>
+        <button class="calculator__buttons--button calculator__buttons--number">0</button>
+        <button class="calculator__buttons--button calculator__buttons--operator">.</button>
+        <button class="calculator__buttons--button calculator__buttons--button-background-green calculator__buttons--result">=</button>
+      </div>
+    </div>
+    <div class="keyboard-bottom">
+      <div class="keyboard-bottom-content"></div>
+    </div>
+
+  </article>
+</body>
+<script src="index.js"></script>
+
+</html>

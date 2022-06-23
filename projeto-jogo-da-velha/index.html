@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Jogo da Velha</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="display__menu">
+      <div class="display__menu--inputs">
+        <form>
+          <div class="toggle-styles">
+            <input class="input-text" type="text" placeholder="Jogador 1">
+          </div>
+          <div class="toggle-styles-2">
+            <input class="input-text with-checkbox" type="text" placeholder="Jogador 2">
+
+            <div class="checkbox-container checkbox-position">
+              <input class="toggle-button" id="toggle" type="checkbox">
+              <label for="toggle"></label>
+            </div>
+          </div>
+        </form>
+        <div class="display__menu--match">
+          <small class="green-text">Tipo de Partida</small>
+          <div class="display__menu--match--type">
+            <small class="match-type">Melhor de 3</small>
+            <div class="checkbox-container">
+              <input class="toggle-button" id="toggle-2" type="checkbox">
+              <label class="outline" for="toggle-2"></label>
+            </div>
+            <small class="match-type">Melhor de 5</small>
+          </div>
+        </div>
+        <div class="play-button">
+          <button class="button">Jogar</button>
+        </div>
+        <div class="match-history">
+          <small class="match-history-text">Histórico de Partidas</small>
+          <div class="last-result">
+            <div class="round-winner">
+              <span class="winner">Vencedor</span>
+              <span class="winner-spot">Primeiro quadrado</span>
+            </div>
+            <small class="cenarium">Cenário</small>
+            <div class="battle-field-scenery">
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+            </div>            
+          </div>
+          <div class="last-result">
+            <div class="round-winner">
+              <span class="winner">Vencedor</span>
+              <span class="winner-spot">Primeiro quadrado</span>
+            </div>
+            <small class="cenarium">Cenário</small>
+            <div class="battle-field-scenery">
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+              <div class="mini-battle-field"></div>
+            </div>            
+          </div>
+          <button id="reset-button" class="reset-button">Reiniciar</button>
+        </div>
+      </div>
+    </section>
+    <section class="mid-column">
+      <div class="mid-body">
+        <div class="score-board">
+          <h1 class="board">Placar</h1>
+          <div class="player-score">
+            <span class="score">01</span>
+            <h2 class="player">Jogador 1</h2>
+            <span class="score">01</span>
+          </div>
+        </div>
+        <div id="main-battle-field" class="main-battle-field">
+          <div class="battle-field"></div>
+          <div class="battle-field"></div>
+          <div class="battle-field"></div>
+          <div class="battle-field"></div>
+          <div class="battle-field"></div>
+          <div class="battle-field"></div>
+          <div class="battle-field"></div>
+          <div class="battle-field"></div>
+          <div class="battle-field"></div>
+        </div>
+      </div>
+    </section>
+    <section class="right-column">
+      <div class="right-column-body">
+        <h2 class="second-title">Histórico de Jogadas</h2>
+      </div>
+      <div class="play-history play-history-margin">
+        <div class="move">O</div>
+        <div class="move-description">
+          <small class="player-description">Jogador 1</small>
+          <span class="play-description">Primeiro Quadrado</span>
+        </div>
+      </div>
+      <div class="play-history">
+        <div class="move">X</div>
+        <div class="move-description">
+          <small class="player-description">Jogador 2</small>
+          <span class="play-description">Primeiro Quadrado</span>
+        </div>
+      </div>
+      <div class="play-history">
+        <div class="move">O</div>
+        <div class="move-description">
+          <small class="player-description">Jogador 1</small>
+          <span class="play-description">Primeiro Quadrado</span>
+        </div>
+      </div>
+      <div class="play-history">
+        <div class="move">X</div>
+        <div class="move-description">
+          <small class="player-description">Jogador 2</small>
+          <span class="play-description">Primeiro Quadrado</span>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
